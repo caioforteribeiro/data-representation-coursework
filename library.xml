@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <books type="technical">
+        <book>
+            <isbn>12345</isbn>
+            <title>Technical book 1</title>
+            <author>John Doe</author>
+        </book>
+        <book>
+            <isbn>54321</isbn>
+            <title>Technical book 2</title>
+            <author>Jane Doe</author>
+        </book>
+
+    </books>
+    <books type="cookery">
+        <book>
+            <isbn>67890</isbn>
+            <title>Vegan recipes</title>
+            <author>Jean Veggie</author>
+        </book>
+        <book>
+            <isbn>09876</isbn>
+            <title>Desserts</title>
+            <author>Sweet Jesus</author>
+        </book>
+
+    </books>
+
+</library>
