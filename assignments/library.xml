@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<books>
+  <technical>
+    <book ISBN=00001>
+      <author>John Doe</author>
+      <title>Introduction to Car Mechanics</title>
+    </book>
+    <book ISBN=00002>
+      <author>Jane Doe</author>
+      <title>Quantitative Analysis</title>
+    </book>
+  </technical>
+  <cookery>
+  <book ISBN=00003>
+      <author>Carl Cook</author>
+      <title>The Secrets of Potatoes</title>
+    </book>
+    <book ISBN=00004>
+      <author>Sylvia Plate</author>
+      <title>Daily Vegan Recipes</title>
+    </book>
+  </cookery>
+</books>
