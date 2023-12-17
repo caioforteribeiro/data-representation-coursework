@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1>Cats</h1>
-        <div> <button id="showCreateButton" onclick="showCreate()">Add New Cat</button></div>
+        <div> <button id="addCatButton" onclick="addCat()">Add New Cat</button></div>
         <div>
             <table class="table" id="catTable">
                 <tr>
@@ -34,8 +34,9 @@
         </div>
     </body>
     <script>
-    function showCreate(){
-        document.getElementById('showCreateButton').style.display="none"
+        
+    function addCat(){
+        document.getElementById('addCatButton').style.display="none"
         document.getElementById('catTable').style.display="none"
         document.getElementById('createUpdateForm').style.display="block"
 
@@ -47,12 +48,12 @@
 
     }
     function showViewAll(){
-        document.getElementById('showCreateButton').style.display="block"
+        document.getElementById('addCatButton').style.display="block"
         document.getElementById('catTable').style.display="block"
         document.getElementById('createUpdateForm').style.display="none"
     }
     function showUpdate(buttonElement){
-        document.getElementById('showCreateButton').style.display="none"
+        document.getElementById('addCatButton').style.display="none"
         document.getElementById('catTable').style.display="none"
         document.getElementById('createUpdateForm').style.display="block"
 
