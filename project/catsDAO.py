@@ -36,7 +36,7 @@ class catsDAO:
     #Create
     def create(self, values):
         cursor = self.getcursor()
-        sql="insert into cats (name,age,breed) values (%s,%s,%s)"
+        sql="insert into cats (name,age,sex,breed) values (%s,%s,%s,%s)"
         cursor.execute(sql, values)
 
         self.connection.commit()
@@ -93,7 +93,7 @@ class catsDAO:
         print("delete done")
 
     def convertToDictionary(self, result):
-        colnames=["id","name","age","breed"]
+        colnames=["id","name","age","sex","breed"]
         item = {}
         
         if result:

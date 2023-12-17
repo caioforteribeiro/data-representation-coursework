@@ -26,6 +26,7 @@ def create():
     cat = {
         "name": request.json['name'],
         "age": request.json['age'],
+        "sex": request.json['sex'],
         "breed": request.json['breed'],
     }
     values =(cat['name'],cat['age'],cat['breed'])
@@ -43,16 +44,18 @@ def update(id):
     if not request.json:
         abort(400)
     reqJson = request.json
-    if 'breed' in reqJson and type(reqJson['breed']) is not int:
+    if 'age' in reqJson and type(reqJson['age']) is not int:
         abort(400)
 
     if 'name' in reqJson:
         foundCat['name'] = reqJson['name']
     if 'age' in reqJson:
         foundCat['age'] = reqJson['age']
+    if 'sex' in reqJson:
+        foundCat['sex'] = reqJson['sex']
     if 'breed' in reqJson:
         foundCat['breed'] = reqJson['breed']
-    values = (foundCat['name'],foundCat['age'],foundCat['breed'],foundCat['id'])
+    values = (foundCat['name'],foundCat['age'],foundCat['sex'],foundCat['breed'],foundCat['id'])
     catsDAO.update(values)
     return jsonify(foundCat)
 
